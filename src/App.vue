@@ -5,7 +5,7 @@
       <TitleBar />
       <div id="content">
         <NavBar />
-        <router-view id="pageContent" />
+        <router-view id="pageContent" class="pageContent" />
       </div>
       <Footer />
     </template>
@@ -29,7 +29,7 @@ export default Vue.extend({
   mounted() {
     setTimeout(() => {
       this.loading = false;
-    }, 2000);
+    }, 0);
   },
 });
 </script>
@@ -37,7 +37,14 @@ export default Vue.extend({
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import '@/assets/_vars';
+@import '@/assets/_vars/_colors.scss';
+@import '@/assets/_vars/_size.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -52,13 +59,14 @@ body {
   box-sizing: border-box;
   user-select: none;
   height: 100%;
+}
 
-  #pageContent {
-   height: calc(100vh - (#{$navbar-height} + #{$titlebar-height} + #{$footer-height})); 
-   overflow: auto;
-   color:white;
-   background-color: $secondary-color;
-  }
+.pageContent {
+  height: calc(100vh - (#{$navbar-height} + #{$titlebar-height} + #{$footer-height})); 
+  overflow: auto;
+  color:white;
+  background-color: $secondary-color;
+  padding: 15px;
 }
 
 ::-webkit-scrollbar {

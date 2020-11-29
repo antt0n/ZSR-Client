@@ -1,6 +1,6 @@
 <template>
   <div id="pattern">
-    <h1>This is an pattern page</h1>
+    <h1>This is a pattern page</h1>
     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat accusamus totam unde vel ducimus deserunt, consequuntur repellat laudantium, at dolorum vero, ipsa non ex accusantium ea voluptatem aspernatur magni sint.
     Debitis ipsa, quo iste cupiditate blanditiis laborum minima veniam dolorem nesciunt pariatur? Dolor laborum nisi exercitationem. Adipisci, asperiores suscipit nam officia modi rem sint fugiat repellendus quia, in tempora at.
     Dolores necessitatibus perferendis quaerat, dolorum laboriosam animi totam praesentium ea modi eum aliquam ullam cumque sunt sint nisi, ratione facilis. Voluptate pariatur enim in dolorem dolores odio necessitatibus soluta autem.

@@ -3,6 +3,15 @@
 import { app, protocol, BrowserWindow, Tray, Menu, shell} from 'electron'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
+
+// Test
+import log from 'electron-log'
+import { autoUpdater } from 'electron-updater'
+
+autoUpdater.logger = log;
+
+//
+
 const isDevelopment = process.env.NODE_ENV !== 'production'
 const path = require("path");
 let appIcon: Tray;
@@ -44,10 +53,11 @@ async function createWindow() {
     { label: "Github page", click: () => { shell.openExternal('https://github.com/antt0n/z-sync-reworked'); } },
     { label: "No idea here :/", click: () => { /* no idea :/ */} },
     { type:"separator" },
-    { label: "Quit Z-Sync", click:  () => { app.quit(); } }
+    { label: "Quit Z-Sync", click: () => { app.quit(); } }
   ]);
 
   appIcon.on('click', function (event) {
+    win.webContents.goToIndex(0);
     win.show();
   });
 

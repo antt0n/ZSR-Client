@@ -1,6 +1,6 @@
 <template>
-  <div id="custom">
-    <h1>This is a custom page</h1>
+  <div id="about">
+    <h1>This is a about page</h1>
   </div>
 </template>
 

@@ -54,7 +54,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/_vars';
+@import '@/assets/_vars/_colors.scss';
+@import '@/assets/_vars/_size.scss';
 
 .titlebar {
   position: sticky;
@@ -66,8 +67,9 @@ export default Vue.extend({
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
+  z-index: 100;
   font-family: 'Ubuntu';
+  cursor: pointer;
 
   .title {
     color: white;

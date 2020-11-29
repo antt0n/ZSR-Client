@@ -1,7 +1,19 @@
 {
-  "name": "vue-electron-app",
+  "name": "zsync-reworked",
   "version": "0.1.0",
+  "author": "Antt0n / Antoine <github.com/antt0n>",
+  "description": "A new version of the Zalman Z-Sync software to control your HUB easily.",
+  "license": "Apache 2.0",
   "private": true,
+  "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "antt0n",
+        "repo": "zsync-reworked"
+      }
+    ]
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -14,6 +26,8 @@
   "main": "background.js",
   "dependencies": {
     "core-js": "^3.6.5",
+    "electron-log": "^4.3.0",
+    "electron-updater": "^4.3.5",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-js-toggle-button": "^1.3.3",

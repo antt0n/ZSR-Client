@@ -12,7 +12,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/_vars';
+@import '@/assets/_vars/_colors.scss';
 
 a {
   color: white;

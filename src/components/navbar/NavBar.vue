@@ -18,7 +18,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/_vars';
+@import '@/assets/_vars/_colors.scss';
+@import '@/assets/_vars/_size.scss';
 
 #navbar {
   width: 100%;
